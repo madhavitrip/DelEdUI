@@ -27,9 +27,8 @@ const AdmitCard = ({
       style={{
         background: "#fff",
         color: "#000",
-        width: "100%",
-        height: "100%",
-        padding: "100px",
+        width: "1000px",
+        padding: "20px",
         margin: "0 auto",
         lineHeight: "30px",
         boxSizing: "border-box",
