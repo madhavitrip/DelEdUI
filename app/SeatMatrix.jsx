@@ -172,7 +172,7 @@ const SeatMatrix = () => {
         display: "grid",
         gridTemplateColumns: `repeat(${cols}, 1fr)`,
         gridTemplateRows: `repeat(${rows}, 1fr)`,
-        gap: "12px",
+        gap: "20px",
         width: "100%",
         maxWidth: "min(90vw, 90vh)",
         aspectRatio: is4x6 ? "6/4" : "4/6",
@@ -888,20 +888,7 @@ const SeatMatrix = () => {
                 </div>
               </div>
 
-              <div style={{
-                border: "3px solid #0A4988",
-                padding: "24px",
-                backgroundColor: "#FFFDE7",
-                borderRadius: "12px",
-                boxShadow: "0 8px 16px rgba(0,0,0,0.15)",
-                width: "100%",
-                maxWidth: "min(95vw, 1200px)",
-                margin: "0 auto",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                minHeight: "400px"
-              }}>
+              <div >
                 {renderSeatGrid()}
               </div>
             </div>

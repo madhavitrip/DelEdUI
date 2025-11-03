@@ -17,7 +17,7 @@ const AdmitCardPage = () => {
 
 
   const[batchStart,setBatchStart] = useState(0);
-const batchSize = 700;
+const batchSize = 3;
 const currentStartRef = useRef(0);
 const [isDownloading, setIsDownloading] = useState(false);
 
