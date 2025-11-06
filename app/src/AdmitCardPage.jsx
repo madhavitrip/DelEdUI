@@ -19,7 +19,7 @@ const AdmitCardPage = () => {
   const registrationNo = regNo || ""; // Use URL param or default
 
   const[batchStart,setBatchStart] = useState(0);
-const batchSize = 3;
+const batchSize = 60;
 const currentStartRef = useRef(0);
 const [isDownloading, setIsDownloading] = useState(false);
 
