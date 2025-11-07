@@ -20,7 +20,7 @@ const AdmitCardPage = () => {
 
   const[batchStart,setBatchStart] = useState(0);
 const batchSize = 60;
-const currentStartRef = useRef(0);
+const currentStartRef = useRef(16000);
 const [isDownloading, setIsDownloading] = useState(false);
 
   const formatDate = (dateStr) => {
@@ -247,6 +247,7 @@ const [isDownloading, setIsDownloading] = useState(false);
             phType={reg.phType || "----"}
             dob={formatDate(reg.dob)}
             address={reg.address}
+            warg={reg.warg}
             roll_t1={reg.rollNumber}
             subject={reg.subject || "Some Subject"}
             photo={reg.imagePath}      // already Base64
@@ -387,6 +388,7 @@ const [isDownloading, setIsDownloading] = useState(false);
           phType={data.phType || "----"}
           dob={formatDate(data.dob)}
           address={data.address}
+          warg={data.warg}
           roll_t1={data.rollNumber}
           subject={data.subject || "Some Subject"}
           photo={data.imagePath}
@@ -536,6 +538,7 @@ const [isDownloading, setIsDownloading] = useState(false);
             phType={registrationData.phType || "----"}
             dob={formatDate(registrationData.dob)}
             address={registrationData.address}
+            warg={registrationData.warg}
             roll_t1={registrationData.rollNumber}
             subject={registrationData.subject || "Some Subject"}
             photo={registrationData.imagePath}

@@ -8,6 +8,7 @@ const AdmitCard = ({
   categ,
   dob,
   address,
+  warg,
   roll_t1,
   subject,
   subCategory,
@@ -110,7 +111,7 @@ const AdmitCard = ({
           <tr>
             <td>फोटो पहचान पत्र</td>
             <td><b>{idtype} ({idno})</b></td>
-            <td colSpan="3" style={{ textAlign: "center" }}><b>D.El.Ed.</b></td>
+            <td colSpan="3" style={{ textAlign: "center" }}><b>{warg}</b></td>
             <td style={{ textAlign: "center" }}><b>{phType}</b></td>
           </tr>
 
